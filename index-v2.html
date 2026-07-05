@@ -707,12 +707,17 @@
     display: none;
   }
 
-  .support-group summary h3 {
+  .summary-title {
+    display: block;
     margin-bottom: 4px;
+    color: var(--text);
+    font-weight: 700;
     font-size: 1.05rem;
+    line-height: 1.2;
   }
 
-  .support-group summary p {
+  .summary-subtitle {
+    display: block;
     margin-bottom: 0;
     color: var(--muted);
     font-family: var(--mono);
@@ -1137,7 +1142,7 @@
         <p class="lead">I turn manual handoffs, review drift, and fragmented business data into Terraform-managed cloud systems that are observable, auditable, and easier to operate.</p>
       </div>
       <p class="credential-line">AWS Solutions Architect + AWS Developer + Terraform Associate</p>
-      <div class="btn-row" aria-label="Primary actions">
+      <div class="btn-row" role="group" aria-label="Primary actions">
         <a class="button primary" href="#proof">Review top projects</a>
         <a class="button" href="https://github.com/manynames3" target="_blank" rel="noopener">GitHub</a>
         <a class="button" href="https://linkedin.com/in/aidenrhaa" target="_blank" rel="noopener">LinkedIn</a>
@@ -1215,7 +1220,7 @@
           </div>
           <p class="outcome">Turns scattered GovCon capture work into a traceable AWS-backed workflow from opportunity intake to proposal draft.</p>
           <p class="problem">GovCon consultants need repeatable intake, readiness scoring, opportunity triage, go/no-go decisions, and proposal drafting without spreadsheets and one-off handoffs.</p>
-          <ul class="chips" aria-label="PursuitDesk key technologies">
+          <ul class="chips">
             <li class="chip">Terraform-managed</li>
             <li class="chip">Lambda/API Gateway</li>
             <li class="chip">RDS + pgvector</li>
@@ -1246,7 +1251,7 @@
           <h3 class="project-title">TerraGate - Terraform PR Risk Gate</h3>
           <p class="outcome">Makes infrastructure changes reviewable before merge by converting Terraform plans into risk, policy, and audit signals.</p>
           <p class="problem">Infrastructure PRs are hard to trust when cost, security, reliability, sensitive values, and blast radius are buried inside raw Terraform plan output.</p>
-          <ul class="chips" aria-label="TerraGate key technologies">
+          <ul class="chips">
             <li class="chip">Terraform plan review</li>
             <li class="chip">GitHub Checks</li>
             <li class="chip">Policy checks</li>
@@ -1277,7 +1282,7 @@
           <h3 class="project-title">InspectIQ - AI-Assisted Vehicle Inspection Workbench</h3>
           <p class="outcome">Turns photo-heavy vehicle inspections into evidence-backed review workflows where AI advises and humans approve.</p>
           <p class="problem">Inspection teams need consistent photo evidence, report readiness, buyer trust, seller disclosure, and accountable review without letting AI silently become the source of truth.</p>
-          <ul class="chips" aria-label="InspectIQ key technologies">
+          <ul class="chips">
             <li class="chip">Human review</li>
             <li class="chip">S3 + SQS</li>
             <li class="chip">Bedrock</li>
@@ -1314,10 +1319,10 @@
     <div class="support-groups">
       <details class="support-group">
         <summary>
-          <div>
-            <h3>Additional AWS Systems</h3>
-            <p>6 systems: CloudOps, Fargate, GitOps, bids, inventory, grid intelligence</p>
-          </div>
+          <span class="summary-copy">
+            <span class="summary-title">Additional AWS Systems</span>
+            <span class="summary-subtitle">6 systems: CloudOps, Fargate, GitOps, bids, inventory, grid intelligence</span>
+          </span>
           <span class="summary-action">Open</span>
         </summary>
         <div class="compact-list">
@@ -1394,10 +1399,10 @@
 
       <details class="support-group">
         <summary>
-          <div>
-            <h3>macOS &amp; Operator Tools</h3>
-            <p>2 systems: market workflows and local-first cleanup review</p>
-          </div>
+          <span class="summary-copy">
+            <span class="summary-title">macOS &amp; Operator Tools</span>
+            <span class="summary-subtitle">2 systems: market workflows and local-first cleanup review</span>
+          </span>
           <span class="summary-action">Open</span>
         </summary>
         <div class="compact-list">
@@ -1430,10 +1435,10 @@
 
       <details class="support-group">
         <summary>
-          <div>
-            <h3>Earlier / Supporting Builds</h3>
-            <p>4 systems: media search, OCR, transcription, and RAG</p>
-          </div>
+          <span class="summary-copy">
+            <span class="summary-title">Earlier / Supporting Builds</span>
+            <span class="summary-subtitle">4 systems: media search, OCR, transcription, and RAG</span>
+          </span>
           <span class="summary-action">Open</span>
         </summary>
         <div class="compact-list">
@@ -1553,12 +1558,12 @@
     <div class="lightbox-header">
       <div>
         <div class="lightbox-label">Project media</div>
-        <h3 class="lightbox-title" id="media-lightbox-title"></h3>
+        <h3 class="lightbox-title" id="media-lightbox-title">Project media</h3>
       </div>
       <button type="button" class="lightbox-close" aria-label="Close project media">Close <span aria-hidden="true">&times;</span></button>
     </div>
     <div class="lightbox-media">
-      <img id="media-lightbox-image" alt="">
+      <img id="media-lightbox-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
     </div>
     <div class="lightbox-hint">Press Esc or click outside the media to close</div>
   </div>
