@@ -13,6 +13,12 @@
 /index-v2.html
   Cache-Control: public, max-age=0, must-revalidate
 
+/v1
+  Cache-Control: public, max-age=0, must-revalidate
+
+/v1.html
+  Cache-Control: public, max-age=0, must-revalidate
+
 /*.pdf
   Cache-Control: public, max-age=86400
 
